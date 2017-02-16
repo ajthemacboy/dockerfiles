@@ -16,8 +16,9 @@ if [ "$SKIP_OWNERSHIP_FIX" != "TRUE" ]; then
 
   fix_ownership /data
   fix_ownership /home/minecraft
-  fix_ownership /start
 fi
+
+chmod 755 /start-minecraft
 
 echo "Switching to user 'minecraft'"
 exec sudo -E -u minecraft /start-minecraft "$@"
