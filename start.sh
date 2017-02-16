@@ -16,6 +16,7 @@ if [ "$SKIP_OWNERSHIP_FIX" != "TRUE" ]; then
 
   fix_ownership /data
   fix_ownership /home/minecraft
+  fix_ownership /start
 fi
 
 echo "Switching to user 'minecraft'"
