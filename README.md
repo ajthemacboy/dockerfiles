@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/itzg/minecraft-server.svg)](https://hub.docker.com/r/itzg/minecraft-server/)
 [![Docker Stars](https://img.shields.io/docker/stars/itzg/minecraft-server.svg?maxAge=2592000)](https://hub.docker.com/r/itzg/minecraft-server/)
+
+A modified version of itzg's Minecraft server for deploying multiple server instances at once
+
 
 This docker image provides a Minecraft Server that will automatically download the latest stable
 version at startup. You can also run/upgrade to any specific version or the
@@ -617,3 +621,11 @@ the following increases the memory limit to 8 GB:
 ### /data ownership
 
 In order to adapt to differences in `UID` and `GID` settings the entry script will attempt to correct ownership and writability of the `/data` directory. This logic can be disabled by setting `-e SKIP_OWNERSHIP_FIX=TRUE`.
+=======
+dockerfiles
+===========
+
+Contains the various Dockerfile definitions I'm maintaining.
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/itzg/dockerfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+>>>>>>> e3296c3cc097633615d4240c7569b30fcb66dcce
