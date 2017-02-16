@@ -19,6 +19,7 @@ if [ "$SKIP_OWNERSHIP_FIX" != "TRUE" ]; then
 fi
 
 chmod 755 /start-minecraft
+chmod 755 /start
 
 echo "Switching to user 'minecraft'"
 exec sudo -E -u minecraft /start-minecraft "$@"
